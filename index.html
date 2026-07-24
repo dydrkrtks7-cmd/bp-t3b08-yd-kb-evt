@@ -1,213 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-burgundy">
+    <title>상수 유흥 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내</title>
+    <meta name="description" content="상수 유흥 추천 가이드는 처음 방문자를 위한 조건별 선택 안내를 제공합니다. 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다.">
+    <meta name="keywords" content="상수 유흥, 추천 가이드, 조건별 선택">
+    <link rel="canonical" href="https://sangsu-nightlife-note.mens-esthe.space">
+    <meta property="og:title" content="상수 유흥 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta property="og:description" content="상수 유흥 추천 가이드는 처음 방문자를 위한 조건별 선택 안내를 제공합니다. 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다.">
+    <meta property="og:url" content="https://sangsu-nightlife-note.mens-esthe.space">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="상수 유흥 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta name="twitter:description" content="상수 유흥 추천 가이드는 처음 방문자를 위한 조건별 선택 안내를 제공합니다. 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "상수 유흥 추천 가이드는 무엇인가?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "상수 유흥 추천 가이드는 처음 방문자를 위한 조건별 선택 안내를 제공합니다. 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "상수 유흥 추천 가이드의 장점은 무엇인가?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "상수 유흥 추천 가이드는 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다. 또한, 처음 방문자를 위한 조건별 선택 안내를 제공합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "상수 유흥 추천 가이드를 사용하면 어떤 장점이 있나?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "상수 유흥 추천 가이드를 사용하면 최고의 경험을 찾을 수 있습니다. 또한, 처음 방문자를 위한 조건별 선택 안내를 제공합니다."
+                }
+            }
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "서울 지역 가이드"
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Serif KR', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #120808;
+            color: #fdf5f5;
+        }
+        .n-txt-vttv {
+            background-color: #120808;
+            color: #fdf5f5;
+            padding: 24px;
+            text-align: center;
+        }
+        .n-hero-14u9 {
+            background-color: #120808;
+            color: #fdf5f5;
+            padding: 16px;
+            text-align: center;
+        }
+        .k-txt-2a7g {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+        }
+        .q-nav-9ff4 {
+            background-color: #120808;
+            color: #fdf5f5;
+            padding: 24px;
+            margin-bottom: 40px;
+            border: 1px solid #6b1a1a;
+        }
+        .m-txt-t63n {
+            background-color: #120808;
+            color: #fdf5f5;
+            padding: 16px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .k-txt-2a7g {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+    <header class="n-txt-vttv">
+        <h1>상수 유흥 추천 가이드</h1>
     </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 강남 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 강남 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-        </div>
-      </div>
+    <nav class="n-hero-14u9">
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">추천 가이드</a></li>
+        </ul>
+    </nav>
+    <main class="k-txt-2a7g">
+        <section class="q-nav-9ff4">
+            <h2>상수 유흥 추천 가이드</h2>
+            <p>상수 유흥 추천 가이드는 처음 방문자를 위한 조건별 선택 안내를 제공합니다. 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다.</p>
+        </section>
+        <section class="q-nav-9ff4">
+            <h2>추천 가이드</h2>
+            <p>상수 유흥 추천 가이드는 다양한 조건을 고려하여 최고의 경험을 찾을 수 있습니다. 처음 방문자를 위한 조건별 선택 안내를 제공합니다.</p>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+    <footer class="m-txt-t63n">
+        <p>&copy; 2023 상수 유흥 추천 가이드</p>
+        <p>작성자: 서울 지역 가이드</p>
     </footer>
-  </div>
 </body>
 </html>
